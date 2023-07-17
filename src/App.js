@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import Hero from "./components/Hero";
+import Header from "./components/Header";
+import Appointment from "./components/Appointment";
+import Prices from "./components/Prices";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
-function App() {
+const App = () => {
+  Aos.init({
+    duration: 2500,
+    delay: 400,
+  });
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="w-full max-w-[1440px] mx-auto bg-orange-quaternary relative">
+      <Header />
+      <Hero />
+      <Appointment />
+      <Prices />
+      <Contact />
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;
