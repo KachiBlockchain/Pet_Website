@@ -13,7 +13,7 @@ const Footer = () => {
             <img src={Logo} alt="" />
           </a>
           {/* copyright text */}
-          <div>&copy; Copyright 2023. All rights reserved. KACHI</div>
+          <div>&copy; Copyright 2023. All rights reserved. <a href="https://codecrafthub.tech"> CodeCraftHub </a></div>
           <div className="flex gap-x-4">
             {social.map((item, index) => {
               return <a href={item.href} key={index}>
