@@ -13,7 +13,7 @@ const Program = () => {
           alt=""
         />
         <div className="lg:text-[23px] text-blue font-extrabold">
-          +234 9049190032
+          +1 (409) 916-8743
         </div>
       </div>
       {/* open hours */}
